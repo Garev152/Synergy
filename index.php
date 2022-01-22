@@ -11,9 +11,9 @@
 
     <form action="" method="">
         <label>Логин</label>
-        <input type="text">
+        <input type="text" placeholder="Введите свой логин">
         <label>Пароль</label>
-        <input type="password">
+        <input type="password" placeholder="Введите пароль">
         <button>Войти</button>
     </form>
     
