@@ -8,6 +8,14 @@
 <body>
 
     <!-- Форма авторизации !-->
+
+    <form action="" method="">
+        <label>Логин</label>
+        <input type="text">
+        <label>Пароль</label>
+        <input type="password">
+        <button>Войти</button>
+    </form>
     
 </body>
 </html>
