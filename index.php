@@ -15,6 +15,16 @@
         <label>Пароль</label>
         <input type="password" placeholder="Введите пароль">
         <button>Войти</button>
+        <style>
+        a {
+    color: rgb(99, 49, 179);
+    font-weight: bold;
+    text-decoration: none;
+}
+        </style>
+        <p>
+            У вас не аккаунта? - <a href="#">зарегистрируйтесь</a>!
+        </p>
     </form>
     
 </body>
