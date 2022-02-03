@@ -13,6 +13,16 @@ body{
     font-family: Montserrat, sans-serif;
 }
 
+a{
+    color: rgb(160, 7, 165);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0;
+}
+
 form{
     display: flex;
     flex-direction: column;
