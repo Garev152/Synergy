@@ -10,13 +10,23 @@
     <!-- Форма авторизации !-->
 
     <form action="" method="">
-        <label>Логин</label>
-        <input type="text" placeholder="Введите свой e-mail">
+        <label>ФИО</label>
+        <input type="text" placeholder="Введите своё полное имя">
+        <label>Почта</label>
+        <input type="email" placeholder="Введите свой e-mail">
+        <label>Серия</label>
+        <input type="password" placeholder="Введите серию паспорта">
+        <label>Номер</label>
+        <input type="password" placeholder="Введите номер паспорта">
+        <label>Кем выдан</label>
+        <input type="text" placeholder="Введите кем выдан паспорт">
+        <label>Дата выдачи</label>
+        <input type="text" placeholder="Введите дату выдачи паспорта">
         <label>Пароль</label>
         <input type="password" placeholder="Введите пароль">
         <button>Войти</button>
         <p>
-            У вас не аккаунта? - <a href="#">зерегистрируйтесь</a>!
+            У вас уже есть аккаунт? - <a href="/index.php">авторизируйтесь</a>!
         </p>
     </form>
     

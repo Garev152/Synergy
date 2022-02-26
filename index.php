@@ -10,13 +10,13 @@
     <!-- Форма авторизации !-->
 
     <form action="" method="">
-        <label>Логин</label>
+        <label>Почта</label>
         <input type="text" placeholder="Введите свой e-mail">
         <label>Пароль</label>
         <input type="password" placeholder="Введите пароль">
         <button>Войти</button>
         <p>
-            У вас не аккаунта? - <a href="#">зерегистрируйтесь</a>!
+            У вас не аккаунта? - <a href="/register.php">зерегистрируйтесь</a>!
         </p>
     </form>
     
