@@ -10,6 +10,8 @@
     $date_of_issue = $_POST['date_of_issue'];
     $password = $_POST['password'];
 
+    $password=md5($password);
+
     mysqli_query($connect, "INSERT INTO `users`(`id`, `full_name`, `email`, `series`, `number`, `who_issued`, `date_of_issue`, `password`) VALUES (NULL, '$full_name', '$email', '$series', '$number', '$who_issued', '$date_of_issue', '$password')");
 
     $_SESSION['message']='Регистрация прошла успешно!';
