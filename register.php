@@ -24,7 +24,7 @@
         <input type="text" name="date_of_issue" placeholder="Введите дату выдачи паспорта">
         <label>Пароль</label>
         <input type="password" name="password" placeholder="Введите пароль">
-        <button>Войти</button>
+        <button type="submit">Войти</button>
         <p>
             У вас уже есть аккаунт? - <a href="/index.php">авторизируйтесь</a>!
         </p>

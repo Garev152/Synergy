@@ -51,3 +51,11 @@ button{
     text-align: center;
     font-weight: bolder;
 }
+
+.none {
+    display: none;
+}
+
+.logout {
+    color: #b7625c;
+}
