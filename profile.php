@@ -17,8 +17,12 @@ if (!$_SESSION['user']) {
     <!-- Профиль -->
 
     <form>
-        <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
-        <a href="#"><?= $_SESSION['user']['email'] ?></a>
+        <b href="#"><?= $_SESSION['user']['full_name'] ?></b>
+        <b href="#"><?= $_SESSION['user']['email'] ?></b>
+        <b href="#"><?= $_SESSION['user']['series'] ?></b>
+        <b href="#"><?= $_SESSION['user']['number'] ?></b>
+        <b href="#"><?= $_SESSION['user']['who_issued'] ?></b>
+        <b href="#"><?= $_SESSION['user']['date_of_issue'] ?></b>
         <a href="vendor/logout.php" class="logout">Выход</a>
     </form>
 
