@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!$_SESSION['user']) {
+    header('Location: profile.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
     <!-- Форма регистрации !-->
-
     <form action="vendor/signup.php" method="post">
         <label>ФИО</label>
         <input type="text" name="full_name" placeholder="Введите своё полное имя">

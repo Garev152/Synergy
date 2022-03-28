@@ -4,32 +4,7 @@ session_start();
 require_once 'connect.php';
 
 $email = $_POST['email'];
-$password = $_POST['password'];
-
-$error_fields = [];
-
-if ($email === '') {
-    $error_fields[] = 'email';
-}
-
-if ($password === '') {
-    $error_fields[] = 'password';
-}
-
-if (!empty($error_fields)) {
-    $response = [
-        "status" => false,
-        "type" => 1,
-        "message" => "Проверьте правильность полей",
-        "fields" => $error_fields
-    ];
-
-    echo json_encode($response);
-
-    die();
-}
-
-$password = md5($password);
+$password = md5($_POST['password']);
 
 $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password'");
 if (mysqli_num_rows($check_user) > 0) {
@@ -46,19 +21,17 @@ if (mysqli_num_rows($check_user) > 0) {
         "date_of_issue" => $user['date_of_issue']  
     ];
 
-    $response = [
-        "status" => true
-    ];
+    header('Location: ../profile.php');
 
-    echo json_encode($response);
-
-} else {
-
-    $response = [
-        "status" => false,
-        "message" => 'Не верный логин или пароль'
-    ];
-
-    echo json_encode($response);
-}
+}else {
+    $_SESSION['message']='Не верный логин или пароль';
+    header('Location: ../index.php');
+}    
 ?>
+
+<pre>
+    <?php
+    print_r($check_user);
+    print_r($user);
+    ?>
+</pre>    
