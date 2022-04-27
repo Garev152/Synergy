@@ -26,7 +26,7 @@
         <label>Кем выдан</label>
         <input type="text" name="who_issued" placeholder="Введите кем выдан паспорт">
         <label>Дата выдачи</label>
-        <input type="text" name="date_of_issue" placeholder="Введите дату выдачи паспорта">
+        <input type="text" name="date_of_issue" placeholder="Введите дату выдачи паспорта:ГГГГ.ММ.ДД">
         <label>Пароль</label>
         <input type="password" name="password" placeholder="Введите пароль">
         <button type="submit">Войти</button>
