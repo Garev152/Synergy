@@ -1,11 +1,11 @@
 <?php
-session_start();
-if (!$_SESSION['user']) {
-    header('Location: /');
-}
+    session_start();
+    if (!$_SESSION['user']) {
+        header('Location: profile.php');
+    }
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
